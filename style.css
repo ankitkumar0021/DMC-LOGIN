@@ -162,4 +162,12 @@ input[type="checkbox"] {
     height: 83px;
     width: 272px;
   }
+  hr {
+    margin-top: 37px;
+  }
+  .checkbox-container {
+    display: grid;
+    justify-content: space-around;
+    gap: 10px;
+  }
 }
