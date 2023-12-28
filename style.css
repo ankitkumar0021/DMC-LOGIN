@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./img/background.jpg);
+  background-size: 100% auto;
+}
+
+.login-container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 80vh;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(173, 216, 230, 0.6),
+    rgb(255 255 255 / 20%)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 125px;
+  margin-bottom: 20%;
+}
+
+.blue-text {
+  color: #3498db;
+}
+
+.orange-text {
+  color: #f16335;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-btn {
+  padding: 10px;
+  background-color: #fec724;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: #c19204;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.checkbox-container input {
+  margin-right: 5px;
+}
+.checkbox-container a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  width: 85%;
+  border: 1px solid #a4a2a2;
+  margin-top: 50px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+.right-section {
+  position: relative;
+}
+
+.top-image,
+.bottom-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.top-image {
+  top: 0;
+  left: 15%;
+  height: 100px;
+  width: 400px;
+}
+
+.bottom-image {
+  bottom: 61px;
+  right: 12%;
+  height: 50px;
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .left-section {
+    display: none;
+  }
+  .top-image {
+    top: 0;
+    left: 10%;
+    height: 83px;
+    width: 272px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-wvfXqfDauz5R/QR/6ZkD3QUT3giEAe1cU+At5q5zUsq0kv5aTOuZLJW8Q5K1PI5uy9CpRZDP7r8MyayF4QzIw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Include other required CDNs or custom fonts if necessary -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="left-section">
+        <h1 class="heading blue-text">Welcome to Travel World</h1>
+        <h2 class="sub-heading orange-text">DMC</h2>
+      </div>
+      <div class="right-section">
+        <!-- Add top image -->
+        <img class="top-image" src="img/travelWorld.png" alt="Top Image" />
+
+        <form class="login-form">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="checkbox-container">
+            <label> <input type="checkbox" /> Remember me </label>
+            <a href="#"><i>Forgot your Password?</i></a>
+          </div>
+        </form>
+
+        <!-- Add bottom image -->
+        <img class="bottom-image" src="img/poweredby1.png" alt="Bottom Image" />
+
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
