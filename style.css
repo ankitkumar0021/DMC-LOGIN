@@ -6,22 +6,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(./img/background.jpg);
+  background-image: url(./img/map\ and\ image.png);
   background-size: 100% auto;
 }
 
 .login-container {
   display: flex;
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
+  border-radius: 85px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 70%;
   height: 80vh;
 }
 
 .left-section {
-  flex: 1;
+  flex: 1.3;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -30,7 +30,7 @@ body {
   background: linear-gradient(
     to right,
     rgba(173, 216, 230, 0.6),
-    rgb(255 255 255 / 20%)
+    rgb(255 255 255 / 1%)
   );
   background-size: cover;
   background-position: center;
@@ -47,13 +47,17 @@ body {
 }
 
 .heading {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
-.sub-heading {
+/* .sub-heading {
   font-size: 125px;
   margin-bottom: 20%;
+} */
+.crmlogo {
+  margin-top: 12%;
+  height: 330px;
 }
 
 .blue-text {
@@ -62,15 +66,17 @@ body {
 
 .orange-text {
   color: #f16335;
+  font-size: 150px;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   width: 80%;
+  margin-left: 25%;
 }
 
-.input-group {
+/* .input-group {
   position: relative;
   margin-bottom: 15px;
 }
@@ -79,7 +85,34 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 95%;
+  width: 65%;
+} */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group img {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  z-index: 1;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.input-group input {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(65% - 30px);
+  padding-left: 50px;
+  z-index: 0;
+  background-color: rgb(213 213 213);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .input-group i {
@@ -90,6 +123,7 @@ body {
 }
 
 .login-btn {
+  font-size: 20px;
   padding: 10px;
   background-color: #fec724;
   color: #fff;
@@ -97,7 +131,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 100%;
+  width: 74%;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  /* margin-left: 10px; */
 }
 
 .login-btn:hover {
@@ -108,25 +144,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 40px;
+  width: 75%;
 }
 
 .checkbox-container input {
   margin-right: 5px;
+  color: black;
 }
 .checkbox-container a {
   text-decoration: none;
   color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+.checkbox-container label {
+  font-size: 14px;
 }
 hr {
-  width: 85%;
+  width: 58%;
   border: 1px solid #a4a2a2;
   margin-top: 50px;
+  margin-left: 105px;
 }
 
 input[type="checkbox"] {
-  transform: scale(1.5);
+  transform: scale(1.2);
   margin-right: 5px;
+}
+.input-group input::placeholder {
+  font-size: 18px;
 }
 .right-section {
   position: relative;
@@ -140,18 +187,24 @@ input[type="checkbox"] {
 }
 
 .top-image {
-  top: 0;
-  left: 15%;
-  height: 100px;
-  width: 400px;
+  top: 20px;
+  left: 23%;
+  height: 95px;
+  width: 300px;
 }
 
 .bottom-image {
-  bottom: 61px;
-  right: 12%;
-  height: 50px;
-  width: 150px;
+  bottom: 80px;
+  right: 22%;
+  height: 90px;
+  width: 90px;
 }
+.bottompart {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   .left-section {
     display: none;
@@ -169,5 +222,10 @@ input[type="checkbox"] {
     display: grid;
     justify-content: space-around;
     gap: 10px;
+  }
+  .bottompart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 }
